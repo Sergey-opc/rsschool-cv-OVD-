@@ -81,6 +81,9 @@ h3 {
 }
 
 .navigation a {
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s;
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
@@ -88,6 +91,27 @@ h3 {
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 500;
+}
+
+.navigation a:after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  height: 40px;
+  height: 5px;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s linear;
+  width: 0;
+  bottom: -3px;
+}
+
+.navigation a:hover:after {
+  width: 100px;
+  margin-left: -50px;
+}
+
+.navigation a:hover:after {
+  right: 0;
 }
 
 .navigation ul {
@@ -338,7 +362,6 @@ h3 {
   font-size: 32px;
   line-height: 42px;
   color: #ffffff;
-
 }
 
 .stories {
@@ -387,6 +410,13 @@ h3 {
   background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
   filter: drop-shadow(0px 4px 4px #0d606f);
   border-radius: 16px;
+  transition: 0.3s;
+}
+
+.storiesImg:hover {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .storiesItem {
@@ -417,6 +447,14 @@ h3 {
   line-height: 24px;
   color: #0d606f;
   margin-left: 40px;
+}
+
+.storiesText a {
+  transition: 0.3s;
+}
+
+.storiesText a:hover {
+  color: #f2785c;
 }
 
 .footer {
