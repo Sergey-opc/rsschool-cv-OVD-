@@ -119,6 +119,15 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  color: #f2785c;
+  cursor: pointer;
 }
 
 .small {
@@ -248,6 +257,13 @@ h3 {
 
 .stepBox div {
   margin-top: 39px;
+  transition: 0.3s;
+}
+
+.stepBox div:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bike {
@@ -386,7 +402,7 @@ h3 {
   margin-left: 40px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
 }
@@ -403,38 +419,38 @@ h3 {
   margin: 21px 0 20px 280px;
 }
 
-.footerIcons{
+.footerIcons {
   display: flex;
   margin: 14px auto auto 328px;
   width: 140.96px;
 }
 
-.footerIcons ul{
+.footerIcons ul {
   justify-content: space-between;
   display: flex;
   width: 100%;
   list-style: none;
 }
 
-.footerIcons li{
+.footerIcons li {
   display: flex;
   align-items: center;
 }
 
-.customIcons{
+.customIcons {
   display: flex;
   margin: 14px auto auto 50px;
   width: 140px;
 }
 
-.customIcons ul{
+.customIcons ul {
   justify-content: space-between;
   display: flex;
   width: 100%;
   list-style: none;
 }
 
-.customIcons li{
+.customIcons li {
   display: flex;
   align-items: center;
 }
