@@ -507,3 +507,75 @@ h3 {
   display: flex;
   align-items: center;
 }
+
+
+@media (max-width: 391px) {
+  .wrapper {
+    max-width: 390px;
+    background-image: 
+    url(./Images/Mobile_1.jpg),
+    url(./Images/Mobile_2.jpg);
+  }
+
+  .header {
+    align-items: center;
+    padding: 45px 16px;
+    width: 100%;
+    height: 120px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .preview {
+    padding: 0px;
+    max-width: 390px;
+    height: 251px;
+    margin-top: 0px;
+  }
+
+  .preview h1{
+    display: none;
+  }
+
+  .previewWords{
+    display: none;
+  }
+
+  .main{
+    max-width: 390px;
+    
+  }
+
+  .serch {
+    margin: 0 auto auto auto;
+    max-width: 360px;
+    height: 48px;
+    padding: 9px;
+  }
+
+  .serchWords {
+    font-family: "Aleo", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #f2785c;
+    margin-left: 16.5px;
+  }
+
+  .small {
+    margin: 25px 0 auto auto;
+    font-size: 16px;
+    width: 103px;
+    height: 41px;
+  }
+  
+  .huge {
+    margin: 0 0 0 auto;
+    font-size: 11px;
+    line-height: 15px;
+    width: 92px;
+    height: 30px;
+  }
+
+}
