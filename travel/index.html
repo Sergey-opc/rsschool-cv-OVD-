@@ -13,29 +13,40 @@
 </head>
 <body>
     <div class="wrapper">
-    <header class="header">
+    <header id="How_It_Works" class="header" >
         <div class="logo">
             <a href="#">
                 <img src="./Images/SmallLogo.svg" alt="TravelPortalLogo"><div class="logoText">Travel Portal</div>
             </a>
         </div>
         <nav class="navigation">
-            <ul>
+            <span class="close" onclick="Close()"></span>
+            <ul class="menuList">
                 <li>
-                    <a href="#How_It_Works">How It Works</a>
+                    <a href="#How_It_Works" onclick="Close()" class="menuLink">How It Works</a>
                 </li>
                 <li>
-                    <a href="#Plan_Your_Trip">Plan Your Trip</a>
+                    <a href="#Plan_Your_Trip" onclick="Close()" class="menuLink">Plan Your Trip</a>
                 </li>
                 <li>
-                    <a href="#Destinations">Destinations</a>
+                    <a href="#Destinations" onclick="Close()" class="menuLink">Destinations</a>
                 </li>
                 <li>
-                    <a href="#Travel_Stories">Travel Stories</a>
+                    <a href="#Travel_Stories" onclick="Close()" class="menuLink">Travel Stories</a>
+                </li>
+                <li class="passive">
+                    <a onclick="Close()" class="menuLink">Account</a>
+                </li>
+                <li class="passive">
+                    <a href="#Social_Media" onclick="Close()" class="menuLink">Social Media</a>
                 </li>
             </ul>
         </nav>
-        <img class="burger" src="./Images/Burger.svg" alt="TravelPortalLogo">
+        <div class="burger"> 
+            <span>
+            </span>
+            <div class="menuOverlay"></div>
+        </div>
         <button class="button small">Login</button>
         <div class="serch2">
             <p class="serchWords">What would you like to do?</p>
@@ -43,7 +54,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="preview" id="How_It_Works">
+        <section class="preview">
             <h1>Explore the beauty of the World</h1>
             <p class="previewWords">Receive personalized recommendations for countries, hotels, activities and more</p>
             <div class="serch">
@@ -84,14 +95,29 @@
                 <div class="imgUSA"><img alt="USAImage" src="./Images/USA.jpg" class="slide-single countryUSA"><span>USA</span></div>
                 <div class="imgSPAIN"><img alt="SPAINImage" src="./Images/SPAIN.jpg" class="slide-single countrySPAIN"><span>SPAIN</span></div> 
             </div>
-            <div class="dots"><span class="dot dotLeft"></span><span class="dot dotMid"></span><span class="dot dotRight"></span></div>
-            <button class="button huge"><img alt="arrowImage" class="arrow" src="./Images/VectorArrow.jpg">Find More</button>
+            <div class="dots1"><span class="dot dotLeft"></span><span class="dot dotMid"></span><span class="dot dotRight"></span></div>
+            <div class="sliderSmall">
+                <div class="imgSPAIN">
+                    <span class="countryName">SPAIN</span>
+                    <div class="chevrons">
+                        <div class="chevron chevronLeft"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="chevron chevronRight"><i class="fa-solid fa-chevron-right"></i></div>                    
+                    </div>
+                    <div class="dots"><span class="dot dotLeft"></span><span class="dot dotMid"></span><span class="dot dotRight"></span></div>
+                </div>
+            </div>
+            <button class="button huge"><i class="fa-solid fa-arrow-right-long"></i>Find More</button>
         </section>
         <section id="Travel_Stories" class="stories">
             <h2>TRAVEL STORIES</h2>
             <div class="storiesBox">
                 <div class="storiesItem">
-                    <img alt="ThailandImg" class="storiesImg" src="./Images/Stories1.jpg"><div class="storiesText">
+                    <picture>
+                    <source srcset="./Images/Stories1.jpg" type="image/jpeg" media="(min-width:390px)"/>
+                    <source srcset="./Images/MobileStories1.jpg" type="image/jpeg" media="(max-width:390px)"/>
+                    <img alt="ThailandImg" class="storiesImg" src="./Images/Stories1.jpg">
+                    </picture>
+                    <div class="storiesText">
                         <h3>10 Photos of Attractive Thailand</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -103,7 +129,12 @@
                         <a href="#" >Read More</a></div>
                 </div>
                 <div class="storiesItem">
-                    <img alt="UtahImg" class="storiesImg" src="./Images/Stories2.jpg"><div class="storiesText">
+                    <picture>
+                        <source srcset="./Images/Stories2.jpg" type="image/jpeg" media="(min-width:390px)"/>
+                        <source srcset="./Images/MobileStories2.jpg" type="image/jpeg" media="(max-width:390px)"/>
+                        <img alt="UtahImg" class="storiesImg" src="./Images/Stories2.jpg">
+                    </picture>
+                        <div class="storiesText">
                         <h3>Canyonlands National Park, Utah</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -115,7 +146,12 @@
                         <a href="#" >Read More</a></div>
                 </div>
                 <div class="storiesItem">
-                    <img alt="MountainsImg" class="storiesImg" src="./Images/Stories3.jpg"><div class="storiesText">
+                    <picture>
+                        <source srcset="./Images/Stories3.jpg" type="image/jpeg" media="(min-width:390px)"/>
+                        <source srcset="./Images/MobileStories3.jpg" type="image/jpeg" media="(max-width:390px)"/>
+                        <img alt="MountainsImg" class="storiesImg" src="./Images/Stories3.jpg">
+                        </picture>
+                        <div class="storiesText">
                         <h3>I left my heart in the Mountains!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -127,7 +163,12 @@
                         <a href="#" >Read More</a></div>
                 </div>
                 <div class="storiesItem">
-                    <img alt="JourneyImg" class="storiesImg" src="./Images/Stories4.jpg"><div class="storiesText">
+                    <picture>
+                    <source srcset="./Images/Stories4.jpg" type="image/jpeg" media="(min-width:390px)"/>
+                    <source srcset="./Images/MobileStories4.jpg" type="image/jpeg" media="(max-width:390px)"/>
+                    <img alt="JourneyImg" class="storiesImg" src="./Images/Stories4.jpg">
+                </picture>
+                        <div class="storiesText">
                         <h3>The Longest journey in my life!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -136,9 +177,9 @@
                             reprehenderit in voluptate velit esse cillum dolore eu fugiat 
                             nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                              sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <a href="#" >Read More</a></div>
+                        <a id="Social_Media" href="#" >Read More</a></div>
                 </div>
-                <button class="button huge"><img alt="arrowSeeMore" class="arrow" src="./Images/VectorArrow.jpg">See More</button>
+                <button class="button huge"><i class="fa-solid fa-arrow-right-long"></i> See More</button>
             </div>
         </section>
     </main>
@@ -171,5 +212,6 @@
     -->
     </div>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/522b070a76.js" crossorigin="anonymous"></script>
 </body>
 </html>
