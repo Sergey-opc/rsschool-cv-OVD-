@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 280px 900px;
+}
+.header {
+  background-color: #959595;
+  height: 200px;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+
+.name {
+  color: #ffdbbb;
+  height: 70%;
+  text-align: center;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hline {
+  width: 100%;
+  height: 1px;
+  background: #959595;
+}
+
+.info {
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 15px;
+  height: 1000px;
+  background: #414141;
+  color: #c7c6c6;
+}
+
+.info h2 {
+  padding-top: 7px;
+}
+
+h2 {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.main {
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 15px;
+  height: 1000px;
+  background: #ffdbbb;
+  color: #414141;
+}
+
+.nav {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+
+.picture {
+  height: 200px;
+  margin-top: 25px;
+  display: flex;
+  padding: 10px;
+  background: #959595;
+  box-sizing: border-box;
+}
+
+.menu-main {
+  height: 100%;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  grid-column: 1/3;
+  height: 80px;
+  background: #959595;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.rslogo {
+  width: 100;
+}
+
+.contacts,
+.skills {
+  list-style: none;
+}
+
+.menu-main li {
+  display: inline-flex;
+  height: 100%;
+}
+.menu-main li:after {
+  content: "|";
+  color: #414141;
+  display: inline-block;
+  padding: 14px;
+  vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+  content: none;
+}
+
+.footer a:hover{
+  color: #fbb171;
+}
+
+.footer a {
+  margin: auto;
+  padding: 20px;
+}
+
+.info a {
+  text-decoration: none;
+  font-family: "Lucida Sans", sans-serif;
+  padding: 9px;
+  margin: auto;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.lang li {
+  text-decoration: none;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 8px;
+  list-style: none;
+}
+
+.footer img {
+  margin: auto;
+  padding: 20px 50px;
+  float: right;
+}
+
+.footer div {
+  font-family: "Lucida Sans", sans-serif;
+  padding: 20px 50px;
+  margin: auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  color: #c7c6c6;
+}
+
+.header a {
+  text-decoration: none;
+  font-family: "Lucida Sans", sans-serif;
+  padding: 9px;
+  margin: auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.header a,
+.info a,
+.header a:visited,
+.info a:visited {
+  color: #c7c6c6;
+}
+.header a.current,
+.header a:hover,
+.info a:hover{
+  color: #fbb171;
+}
+.header a:before,
+.info a:before,
+.header a:after,
+.info a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ffdbbb;
+  transition: 0.8s;
+}
+.header a:hover:before,
+.info a:hover:before,
+.current:before {
+  left: 0;
+}
+.header a:hover:after,
+.info a:hover:after,
+.current:after {
+  right: 0;
+}
+
+.rslogo {
+  text-decoration: none;
+}
+
+.git,
+.main a {
+  text-decoration: none;
+  font-family: "Lucida Sans", sans-serif;
+  padding: 9px;
+  margin: auto;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s;
+  color: #464646;
+}
+
+.main a:hover{
+  color:#c7c6c6;
+}
+
+.git {
+  color: #c7c6c6;
+}
+
+.main section {
+  padding: 30px;
+}
+
+.education b,
+.education i,
+.education li {
+  display: inline-block;
+  padding: 0 0 15px 0;
+}
